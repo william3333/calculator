@@ -30,7 +30,7 @@ if st.button("Calculate"):
         future_value = principal * (1 + monthly_rate) ** months
 
         if monthly_investment:
-            future_value = monthly_investment * (1 + monthly_rate) * (((1 + monthly_rate) ** months)-1) / monthly_rate
+            future_value += monthly_investment * (1 + monthly_rate) * (((1 + monthly_rate) ** months)-1) / monthly_rate
     else:
         future_value = principal * (1 + (annual_return / 100) * investment_period)
 
