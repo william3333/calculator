@@ -14,7 +14,7 @@ annual_return = st.number_input("Expected Annualized Return Rate (%)", min_value
 investment_period = st.number_input("Investment Period (Years)", min_value=1)
 
 # User input: Investment type (Simple or Compound)
-investment_type = st.radio("Choose Investment Type:", ("Simple Interest (One-Time)", "Compound Interest (One-Time)", "Compound Interest (Monthly)"))
+investment_type = st.radio("Choose Investment Type:", ("Simple Interest (One-Time Invest)", "Compound Interest (One-Time Invest)", "Compound Interest (Monthly Invest)"))
 
 # User input: Monthly fixed investment
 if investment_type == "Compound Interest (Monthly)":
