@@ -40,23 +40,3 @@ if st.button("Calculate"):
 if st.button("Reset"):
     principal = annual_return = investment_period = monthly_investment = None
     st.write("Inputs have been reset.")
-
-# Optional: Provide an explanation of the formula and assumptions
-st.subheader("Calculator Explanation")
-st.write("""
-- **Simple Interest (One-Time)**: Calculates the future value using the simple interest formula:
-  \(FV = P \cdot (1 + \frac{r}{100} \cdot t)\)
-
-- **Compound Interest (One-Time)**: Calculates the future value using the compound interest formula:
-  \(FV = P \cdot (1 + \frac{r}{n})^{n \cdot t}\)
-
-- **Compound Interest (Monthly)**: Calculates the future value using monthly compounding for both principal and monthly investments.
-""")
-
-# Optional: Add disclaimer
-st.sidebar.subheader("Disclaimer")
-st.sidebar.write("This calculator provides approximate results and does not account for taxes or other factors that may affect real-world investments.")
-
-# Run the Streamlit app
-if __name__ == "__main__":
-    st.run()
