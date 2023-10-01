@@ -17,7 +17,7 @@ investment_period = st.number_input("Investment Period (Years)", min_value=1)
 investment_type = st.radio("Choose Investment Type:", ("Simple Interest (One-Time Investment)", "Compound Interest (One-Time Investment)", "Compound Interest (Monthly Investment)"))
 
 # User input: Monthly fixed investment
-if investment_type == "Compound Interest (Monthly)":
+if investment_type == "Compound Interest (Monthly Investment)":
     monthly_investment = st.number_input("Monthly Fixed Investment ($)", min_value=0.01)
 else:
     monthly_investment = None
